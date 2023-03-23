@@ -13,7 +13,7 @@ public class Point {
         System.out.println("result (0, 0) to (2, 0) " + result);
         result = Point.distance(8, 2, 2, 6);
         System.out.println("result (0, 0) to (2, 0) " + result);
-        result = Point.distance(5,1,3,9);
+        result = Point.distance(5, 1, 3, 9);
         System.out.println("result (5, 1) to (3, 9) " + result);
     }
 }
