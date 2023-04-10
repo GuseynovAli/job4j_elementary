@@ -49,11 +49,22 @@ public class FindLoopTest {
     @Test
     public void whenDiapasonHasNot8ThenMinus1() {
         int[] data = new int[] {45, 123, 4, 1324, 44, 5, 9, 10};
-        int el = 2;
+        int el = 8;
         int start = 3;
         int finish = 6;
         int result = FindLoop.indexInRange(data, el, start, finish);
         int expected = -1;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenDiapasonHas9Then1() {
+        int[] data = new int[] {45, 123, 4, 1324, 44, 5, 9, 10, 1};
+        int el = 1;
+        int start = 6;
+        int finish = 8;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 8;
         assertThat(result).isEqualTo(expected);
     }
 }
