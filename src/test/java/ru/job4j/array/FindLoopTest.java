@@ -58,7 +58,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenDiapasonHas9Then1() {
+    public void whenDiapasonHas1Then8() {
         int[] data = new int[] {45, 123, 4, 1324, 44, 5, 9, 10, 1};
         int el = 1;
         int start = 6;
