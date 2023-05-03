@@ -23,11 +23,21 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax2To1Then1() {
+    public void whenMax2To1Then2() {
         int left = 2;
         int right = 1;
         int result = Max.max(left, right);
         int expected = 2;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax4To2To3Then4() {
+        int left = 4;
+        int third = 2;
+        int forth = 3;
+        int result = Max.max(left, Max.max(third, forth));
+        int expected = 4;
         assertThat(result).isEqualTo(expected);
     }
 }
