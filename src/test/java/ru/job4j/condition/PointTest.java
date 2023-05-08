@@ -32,7 +32,7 @@ public class PointTest {
     }
 
     @Test
-    public void when51to39then8dot2() {
+    public void when51to319then8dot2() {
         double expected = 8.2;
         Point a = new Point(5, 1);
         Point b = new Point(3, 9);
@@ -40,4 +40,12 @@ public class PointTest {
         Assert.assertEquals(expected, out, 0.05);
     }
 
+    @Test
+    public void when51to39to142then14dot56() {
+        double expected = 14.56;
+        Point a = new Point(5, 1, 14);
+        Point b = new Point(3, 9, 2);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.05);
+    }
 }
