@@ -6,7 +6,7 @@ public class Max {
     }
 
     public static int max(int first, int third, int forth) {
-        return max(first, max(third, forth, first));
+        return max(first, max(third, forth));
     }
 
     public static int max(int first, int second, int third, int forth) {
