@@ -6,14 +6,11 @@ public class SimpleStringEncoder {
         String result = "";
         char currentSymbol = input.charAt(0);
         int counter = 1;
-
         if (input.length() == 1) {
             return input;
         }
-
         for (int i = 1; i < input.length(); i++) {
             char nextSymbol = input.charAt(i);
-
             if (currentSymbol == nextSymbol) {
                 counter++;
             } else {
@@ -22,9 +19,7 @@ public class SimpleStringEncoder {
                 counter = 1;
             }
         }
-
         result += getCurrentSymbolCount(currentSymbol, counter);
-
         return result;
     }
 
@@ -32,7 +27,6 @@ public class SimpleStringEncoder {
         if (counter == 1) {
             return String.valueOf(currentSymbol);
         }
-
         return currentSymbol + Integer.toString(counter);
     }
 }
